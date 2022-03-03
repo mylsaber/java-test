@@ -7,7 +7,7 @@ import com.mylsaber.mybatis02.version2.Interceptor.impl.LogInterceptorImpl2;
 import com.mylsaber.mybatis02.version2.handler.ProxyHandler2;
 import com.mylsaber.mybatis02.version3.Interceptor.impl.LogInterceptorImpl3;
 import com.mylsaber.mybatis02.version3.utils.InterceptorChain;
-import com.mylsaber.mybatis02.version4.handler.TxInterceptorImpl4;
+import com.mylsaber.mybatis02.version4.interceptor.impl.TxInterceptorImpl4;
 import com.mylsaber.mybatis02.version4.interceptor.impl.LogInterceptorImpl4;
 import com.mylsaber.mybatis02.version4.utils.InterceptorChain4;
 import org.junit.Before;

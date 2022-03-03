@@ -1,4 +1,4 @@
-package com.mylsaber.mybatis02.version4.handler;
+package com.mylsaber.mybatis02.version4.interceptor.impl;
 
 import com.mylsaber.mybatis02.version4.interceptor.Interceptor4;
 

@@ -4,9 +4,13 @@ import com.mylsaber.mybatis02.version4.Invocation;
 import com.mylsaber.mybatis02.version4.handler.ProxyHandler4;
 
 public interface Interceptor4 {
-    void before();
+    default void before() {
 
-    void after();
+    }
+
+    default void after() {
+
+    }
 
     default Object intercept(Invocation invocation) {
         this.before();
