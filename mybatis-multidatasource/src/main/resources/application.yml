@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    druid:
+      one:
+        url: jdbc:mysql://124.223.91.119:3306/mybatis?characterEncoding=UTF-8
+        username: root
+        password: mylsaber
+        driver-class-name: com.mysql.cj.jdbc.Driver
+      two:
+        url: jdbc:mysql://192.168.179.128:3306/mybatis?characterEncoding=UTF-8
+        username: root
+        password: mylsaber
+        driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: multiDataSource
+server:
+  port: 10086
+mybatis:
+  mapper-locations: classpath*:mapper/*Mapper.xml
