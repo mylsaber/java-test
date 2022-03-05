@@ -1,8 +1,9 @@
 package com.mylsaber.mybatismultidatasource.controller;
 
-import com.mylsaber.mybatismultidatasource.config.DataSource;
+import com.mylsaber.mybatismultidatasource.constant.DataEnum;
 import com.mylsaber.mybatismultidatasource.entity.Student;
 import com.mylsaber.mybatismultidatasource.service.HelloService;
+import com.mylsaber.mybatismultidatasource.utils.SwitchDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,11 +21,8 @@ public class HelloController {
     private HelloService helloService;
 
     @RequestMapping("/hello/{dbId}")
-    @DataSource()
     public List<Student> hello(@PathVariable String dbId) {
-//        if (Objects.equals(dbId, "2")) {
-//            SwitchDataSource.setDataSource("dataSource2");
-//        }
+        SwitchDataSource.setDataSource(DataEnum.getDataSourceName(dbId));
         return helloService.listStudent();
     }
 }

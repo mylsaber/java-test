@@ -28,6 +28,7 @@ public class DataSourceConfig {
     }
 
     @Bean
+    //设置spring的主数据源类
     @Primary
     public AbstractRoutingDataSource abstractRoutingDataSource() {
         HashMap<Object, Object> dataSources = new HashMap<Object, Object>() {{
