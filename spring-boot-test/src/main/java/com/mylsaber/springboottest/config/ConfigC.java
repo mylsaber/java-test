@@ -1,13 +1,13 @@
 package com.mylsaber.springboottest.config;
 
-import org.springframework.stereotype.Component;
-
 /**
  * @author jfw
  */
-
-@Component
 public class ConfigC {
+    public ConfigC() {
+        System.out.println("实例化C");
+    }
+
     public void print() {
         System.out.println("configC");
     }

@@ -11,6 +11,10 @@ public class ConfigA {
 
     private ConfigB configB;
 
+    public ConfigA() {
+        System.out.println("实例化A");
+    }
+
     public ConfigB getConfigB() {
         return configB;
     }
